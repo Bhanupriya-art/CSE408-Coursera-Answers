@@ -1,6 +1,6 @@
 # CSE408 ANSWERS
 
-## Link of Course For Week 1 :- https://www.coursera.org/learn/analysis-of-algorithms/lecture/oiAWW/history-and-motivation 
+## Link of Course For Week 1 :- https://www.coursera.org/learn/analysis-of-algorithms/lecture/oiAWW/history-and-motivation<br><br> https://www.coursera.org/learn/analysis-of-algorithms/lecture/u28LG/computing-values
 
 ## Week 1 Solution
 

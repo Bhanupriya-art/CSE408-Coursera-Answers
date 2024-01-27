@@ -47,6 +47,38 @@
 
 ### Q.6 What is the value of &#x2211;<sub>0&#8804;k&#8804;n</sub>(<sup>2k</sup>&frasl;<sub>k</sub>)(<sup> 2n-2k </sup> &frasl; <sub> n-k </sub>) ?<br><br> Answer:- 4<sup>n</sup>
 
+# Link of Course For Week 3 :- https://www.coursera.org/learn/analysis-of-algorithms/home/week/4
+
+## Week 3 Solution According to College IP
+
+## Asymptotics
+
+## Asymptotic Approximation
+
+### Q.1 Give an asymptotic approximation of e<sup>H<sub>2N</sub></sup> to within O ( 1 &frasl; N<sup>2</sup> ) <br><br> Answer:- 2 - 1 &frasl; 2N + O ( 1 &frasl; N<sup>2</sup> )
+
+### Q.2 Which of the following has approximate value 1.62889? <br> <br>Answer:- 1.05<sup>10</sup>
+
+## Extra Question
+
+### Q.1 Match each function with an asymptotic expansion.
+| Functions | Asymptotic expansion |
+|----------|----------|
+| H<sub>N</sub> | ln N + γ + 1 &frasl; 2N + O( 1 &frasl; N<sup>2</sup>) |
+| exp(H<sub>2N</sub> - H<sub>N</sub>) - 1 | 1 - 1 &frasl; 2N + O( 1 &frasl; N<sup>2</sup>) |
+| exp(H<sub>N</sub>) | N + O(1) |
+| exp( 1 &frasl; N) | 1 + 1 &frasl; N + O( 1 &frasl; N<sup>2</sup>) |
+| (1 + 1 &frasl; N)<sup>-1</sup> | 1 - 1 &frasl; N + O( 1 &frasl; N<sup>2</sup>) 
+
+
+### Q.2 Match each expression with an approximation to its value.
+| Expression | value |
+|----------|----------|
+| 1.01<sup>10</sup> | 1.10462 |
+| 1.05<sup>10</sup> | 1.62889 |
+| 1.01<sup>20</sup> | 1.22019 |
+| 1.01<sup>50</sup> | 1.64463 |
+| 1.01<sup>100</sup> | 2.70481 |
 
 
 

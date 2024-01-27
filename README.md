@@ -47,7 +47,7 @@
 
 ### Q.6 What is the value of &#x2211;<sub>0&#8804;k&#8804;n</sub>(<sup>2k</sup>&frasl;<sub>k</sub>)(<sup> 2n-2k </sup> &frasl; <sub> n-k </sub>) ?<br><br> Answer:- 4<sup>n</sup>
 
-# Link of Course For Week 3 :- https://www.coursera.org/learn/analysis-of-algorithms/home/week/4
+# Link of Course For Week 3 :- https://www.coursera.org/learn/analysis-of-algorithms/home/week/4<br><br>https://www.coursera.org/learn/analysis-of-algorithms/exam/h21uJ/trees?redirectToCover=true
 
 ## Week 3 Solution According to College IP
 
@@ -80,5 +80,11 @@
 | 1.01<sup>50</sup> | 1.64463 |
 | 1.01<sup>100</sup> | 2.70481 |
 
+## Trees
 
+## Trees Quiz
+
+### Q.1 Which of the following constructions defines the Motzkin (unary-binary) trees?<br><br>Answer:- M = Z + Z X M + Z X M X M
+
+### Q.2 Of the following, which are the least numerous, for a given (large) number of nodes?<br><br>Answer:- unordered trees
 

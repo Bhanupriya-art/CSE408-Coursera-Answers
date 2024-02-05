@@ -108,9 +108,15 @@
 
 ## Week 7:- Permutations
 
-### Q.1 Of the following, which is the best approximation to the probability that a permutation of size Nhas exactly 1 cycle?<br><br>Answer:- 1 &frasl; N
+### Q.1 Of the following, which is the best approximation to the probability that a permutation of size N has exactly 1 cycle?<br><br>Answer:- 1 &frasl; N
 
 ### Q.2 Which event is leastlikely, in a random permutation of size 1000?<br><br>Answer:- It has no cycles of length less than 5.
+
+### Q.3 Of the following, which is the best approximation to the probability that a permutation of size N has exactly 3 cycle?<br><br>Answer:- ln N / N<sup>2</sup>
+
+### Q.4 Of the following, which is the best approximation to the probability that a permutation of size N has exactly 2 cycle?<br><br>Answer:- ln N / N
+
+### Q.5 Which event is mostlikely, in a random permutation of size 1000?<br><br>Answer:- It has no cycles of length 1, 2, 3, or 7.
 
 ## Week 8:- Strings and Tries
 

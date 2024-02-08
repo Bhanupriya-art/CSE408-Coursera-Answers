@@ -133,6 +133,8 @@
 
 ### Q.2 Which of the following EGFs define random mappings with no singleton cycles, as a function of the Cayley function C(z) = ze<sup>C(z)</sup>?<br><br>Answer:- e<sup>-C(z)</sup> &frasl; ( 1 - C(z) )
 
+### Q. Which of the following constructions defines words?<br><br>Answer:- SEQ<sub>M</sub>(SET(Z))
+
 
 # Link of course:- https://www.coursera.org/learn/algorithms-on-strings
 

@@ -238,5 +238,10 @@
 
 ### Q.2 Let a<sub>0</sub>,...,a<sub>511</sub> be a sequence of real numbers obtained from sampling wind velocity with 8 samples per minute over 64 minutes (roughly 1 hour).<br>Suppose we compute the DFT and obtain the sequence [ A<sub>0</sub>,...,A<sub>n-1</sub> ]as the DFT coefficients.<br><br>Answer:- <br>1. A<sub>0</sub> = &#8721; $\_{j=0}^{511} a_j$.<br>2. A<sub>256</sub> = a<sub>0</sub> - a<sub>1</sub> + a<sub>2</sub> - a<sub>3</sub> + ... + a<sub>510</sub> - a<sub>511</sub><br>3. A<sub>128</sub> corresponds to the frequency: 8 &#215; 128 &frasl; = per minute = 2/minute.<br>4. The highest frequency component is A<sub>256</sub> which corresponds to a frequency of 4/minute.<br>5. The reason we assign negative frequencies to components A<sub>j</sub> for j &#62; n &frasl; 2 is because they correspond to roots of unity $w_n^j$ which can be seen as "rotating" in clockwise direction (opposite direction to roots $w_n^j$ for j &#8804; n &frasl; 2.
 
+## Week 1:- Problem Set 1
+
+### For the problem set 1 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder there is a file named "Problem Set 1.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
+
+Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then in Problem Set 1 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
 

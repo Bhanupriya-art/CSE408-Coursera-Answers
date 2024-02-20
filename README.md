@@ -294,7 +294,7 @@ Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then i
 
 ### Q.2 Refer to the problem introduced in the previous question.<br><br>Let maxValue(j, W) be the maximum value obtained for considering items I<sub>j</sub>,...,I<sub>3</sub>  and weight limit W.<br>Note that 1 &#8804; j &#8804; 4. In particular for j = 4, we obtain the empty list of items.<br><br>Select all the correct facts from the choices below.<br><br>Notation [a &frasl; b] is the value by computing a &frasl; b and rounding it down when a,b > 0.<br><br>Answer:-<br>1. The minimum number of times we can choose item I<sub>j</sub> is 0 and maximum number of times is [ W &frasl; w<sub>j</sub> ]<br>2. maxValue(4, W) = 0 whenever W &#8805; 0.<br>3. If the thief chose to steal item I<sub>j</sub>, K &#8805; 0 times, the remaining weight budget is W - kw<sub>j</sub> and value obtained is kv<sub>j</sub>.
 
-## Week 3:- Longest Common Subsequence
+## Week 2:- Longest Common Subsequence
 
 ### Q.1 Consider two strings:<br><br>s1 = "ATTCCGGAC" and s2 = "TTACGG"<br><br>We wish to find the longest common substring between these two strings.<br><br>Answer:-<br>1. The longest common substring is of length 5: "TTCGG"<br>2. Suppose we have committed to matching the second character "T" in s1 to the first character s2,  the remaining decision is to optimally find the LCS for the suffix: TCCGGAC and TACGG
 

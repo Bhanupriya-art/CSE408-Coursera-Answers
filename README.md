@@ -244,4 +244,67 @@
 
 Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then in Problem Set 1 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
+## Week 2:- Rod Cutting Problem and Recurrence (Practice Quiz)
 
+### Q.1 Consider the rod cutting problem with the following price table:<br>
+| Length | Price |
+|----------|----------|
+| 2 | 1.9 |
+| 3 | 2.2 |
+| 5 | 4.2 |
+### Assume that "wasting" earns no revenue. <br>We have a rod of length L = 11. Choose all the correct facts below.<br><br>Answer:- The optimal solution involves 1 cut of length 5 and 3 cuts of length 2.
+
+### Q.2 Consider the rod cutting problem with the following price table:
+| Length | Price |
+|----------|----------|
+| 2 | 1.9 |
+| 3 | 2.2 |
+| 5 | 4.2 |
+### Assume that "wasting" earns a penalty that is −1 × waste length<br>Let maxRev(L) denote the maximum revenue obtainable from a rod of length L with the price table fixed above. Fill in the missing portions of the recurrence below:<br>maxRev(L) = &#123; ?<sub>1</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L < 0<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123; ?<sub>2</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123; max (?<sub>3</sub>, maxRev(L - 2)+?<sub>4</sub>, maxRev(L - 3)+?<sub>5</sub>, maxRev(L - 5)+?<sub>6</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise<br><br>Answer:- <br>1. ?<sub>2</sub> should be 0<br>2. ?<sub>4</sub> should be 1.9<br>3. ?<sub>6</sub> should equal the revenue of a cut of length 5.
+
+## Week 2:- Memoization
+
+### Q.1 Consider the rod cutting problem with the following price table:
+| Length | Price |
+|----------|----------|
+| 2 | 1.9 |
+| 3 | 2.2 |
+| 5 | 4.2 |
+### Assume that "wasting" earns no revenue.<br>We have a rod of length L = 9.<br>Using the recurrence, we will fill out the memo table T below for the rod cutting problem for length L  = 9 
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 |
+### Answer:- <br>1. T[1] = 0<br>2. T[2] = 1.9<br>3. T[3] = max(0, T[0] + 2.2, T[1] + 1.9, T[-2] + 4.2)<br>4. T[j] = max(0, T[j - 2] + 1.9, T[j - 3] + 2.2, T[j - 5] + 4.2)with T[j] = -&#8734; for j < 0
+
+## Week 2:- Coinchanging Problem
+
+### Q.1 Consider we wish to compute change for 48 cents given coins of denomination<br>{ 2, 5, 10, 20} cents. We design two tables<br><br>Tbl[j] that records the best solution in terms of number of coins for j cents.<br>S[j] that records the "first" coin denomination that we need to use for obtaining the solution for Tbl[j]<br>Select all the correct facts from the list below.<br><br>Answer:-<br>1. Tbl[j] = min(1 + Tbl[j - 2], 1 + Tbl[j - 5], 1 + Tbl[j - 10], 1 + Tbl[j - 20])<br>2. Tbl[3] = &#8734; denoting that we cannot make change for 3 cents using the given denominations.<br>3. Suppose we wish to recover the solution, let S[48] have the value 20 after we finish implementing the memoization. The solution recovery will add a 20 cent coin to our solution list and look up S[28]
+
+### Q.2 Consider the usual solution that people use to make change for target T.<br><br>-Take the largest denomination coin that is &#8804; T let it be c<sub>j</sub>.<br>-Give c<sub>j</sub> and recursively make change for T - c<sub>j</sub>.<br>-Stop when the remaining change is 0.<br>Consider the denominations {1,2,5,10,20,25} cents.<br><br>Answer:-<br>1. Suppose we wish to make change for 50 cents, our approach will provide two 25 cent coins as change, which is optimal.<br>2. The algorithm makes optimal decision for T = 49, using four coins: one 25 cent, one 20 cent and two 2 cent coins.
+
+## Week 2:- Knapsack Problem
+
+### Q.1 Throughout this quiz consider a knapsack problem with three items 
+| Item | Value | Weight |
+|------|-------|--------|
+| I<sub>1</sub> | v<sub>1</sub> | w<sub>1</sub> |
+| I<sub>2</sub> | v<sub>2</sub> | w<sub>2</sub> |
+| I<sub>3</sub> | v<sub>3</sub> | w<sub>3</sub> |
+### Once again we wish to maximize the total value of our steal while keeping weights under limit W. However,  for each item we can steal arbitrarily many copies of that item. For instance, if we steal item I<sub>2</sub> 5 times, we have a value of 5v<sub>2</sub> and weight 5w<sub>2</sub>. There is no limit on the number of times an item can be stolen.<br><br>Assume w<sub>j</sub> > 0 for each item: otherwise, we can take infinitely many copies of the items and the problem becomes undefined.<br><br>Answer:- This sort of situation can happen if I<sub>j</sub> is a stock where we can invest in 0 or more units of the stock I<sub>j</sub>.
+
+### Q.2 Refer to the problem introduced in the previous question.<br><br>Let maxValue(j, W) be the maximum value obtained for considering items I<sub>j</sub>,...,I<sub>3</sub>  and weight limit W.<br>Note that 1 &#8804; j &#8804; 4. In particular for j = 4, we obtain the empty list of items.<br><br>Select all the correct facts from the choices below.<br><br>Notation [a &frasl; b] is the value by computing a &frasl; b and rounding it down when a,b > 0.<br><br>Answer:-<br>1. The minimum number of times we can choose item I<sub>j</sub> is 0 and maximum number of times is [ W &frasl; w<sub>j</sub> ]<br>2. maxValue(4, W) = 0 whenever W &#8805; 0.<br>3. If the thief chose to steal item I<sub>j</sub>, K &#8805; 0 times, the remaining weight budget is W - kw<sub>j</sub> and value obtained is kv<sub>j</sub>.
+
+## Week 3:- Longest Common Subsequence
+
+### Q.1 Consider two strings:<br><br>s1 = "ATTCCGGAC" and s2 = "TTACGG"<br><br>We wish to find the longest common substring between these two strings.<br><br>Answer:-<br>1. The longest common substring is of length 5: "TTCGG"<br>2. Suppose we have committed to matching the second character "T" in s1 to the first character s2,  the remaining decision is to optimally find the LCS for the suffix: TCCGGAC and TACGG
+
+### Q.2 Consider strings s1: ATCCG and s2: CACGC<br><br>We construct a memo table which for your convenience is labeled with the characters in strings s1 and s2
+| | C | A | C | G | C | |
+|-|---|---|---|---|---|-|
+| A | | | | | | 0 |
+| T | | | | | | 0 |
+| C | | | ??7 | ??5 | ??6 | 0 |
+| C | | | | ??4 | ??3 | 0 |
+| G | | | | ??2 | ??1 | 0 |
+| | 0 | 0 | 0 | 0 | 0 | 0 |
+### Write down the values that will be filled in for the positions labeled with ??1 - ??7 in the memo table above and use those to select the correct answers below.<br><br>Answer:-<br>1. ??1 = 0<br>2. ??2 = 1<br>3. ??3 = 1<br>4. ??4 = max(??3, ??2)<br>5. ??7 = ??4 + 1<br>6. ??7 = 2

@@ -308,3 +308,30 @@ Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then i
 | G | | | | ??2 | ??1 | 0 |
 | | 0 | 0 | 0 | 0 | 0 | 0 |
 ### Write down the values that will be filled in for the positions labeled with ??1 - ??7 in the memo table above and use those to select the correct answers below.<br><br>Answer:-<br>1. ??1 = 0<br>2. ??2 = 1<br>3. ??3 = 1<br>4. ??4 = max(??3, ??2)<br>5. ??7 = ??4 + 1<br>6. ??7 = 2
+
+## Week 3:- Greedy Algorithms(Practice Quiz)
+
+### Q.1 Consider once again the coin changing problem with denominations: {1, 2, 5, 10} cents.<br><br>Answer:-<br>1. The greedy coin changing algorithm when applied to make change for 18 cents will utilize 4 coins.<br>2. If we added a 8 cent coin to our set of denominations, the greedy algorithm will not be an optimal algorithm for making change with the least number of coins.
+
+### Q.2 Consider a version of knapsack problem for a perfumer who has an empty perfume bottle with volume V = 10 ml and would like to mix ingredients in various proportions to maximize the total profit which is simply calculated by summing up the profit/unit volume of each ingredient times the volume of the ingredient used.
+| Liquid | Profit/Unit Volume | Available Amount |
+|--------|--------------------|------------------|
+| A | 1.5 $/ml | 10 ml |
+| B | 2.2 $/ml | 4 ml |
+| C | 3.3 $/ml | 3 ml |
+| D | 2.1$/ml | 5 ml |
+| E | 1.7 $/ml | 2 ml |
+### Answer:-<br>1. The optimal solution would be to fill up 3 units of C, 4 units of B, and 3 units of D yielding a total profit of 3 x 3.3 + 4 x 2.2 + 3 x 2.1 = 25 dollars.<br>2. For solving problems like this, a greedy strategy would be to first take as many units of ingredient C as possible since that has the most profit per unit volume.
+
+## Week 3:- Greedy Interval Scheduling
+
+### Q.1 In this lecture, we saw how greedy algorithms were optimal for interval scheduling when our goal is to maximize the number of meetings held. Suppose we have the same problem setup of meetings with start/end times specified and our goal was to improve the overall room utilization : i.e, the amount of time the room is occupied in a meeting rather than the number of meetings.<br><br>Answer the following questions below by selecting the correct facts.<br><br>Answer:-<br>1. Suppose we design a greedy algorithm that first schedules the longest meeting, deletes all the conflicting meetings and recursively solves the remaining sub problem, this algorithm is not optimal in terms of total occupancy.<br>2. The greedy algorithm used to maximize the number of meetings held will not necessarily maximize the total time the room is occupied by a meeting.<br>3. Suppose all meetings are of the same duration then maximizing the number of meetings is equivalent to maximizing the total time utilized by the meetings.
+
+
+
+
+
+
+
+
+

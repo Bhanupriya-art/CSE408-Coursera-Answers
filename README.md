@@ -240,9 +240,9 @@
 
 ## Week 1:- Problem Set 1
 
-### For the problem set 1 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder there is a file named "Problem Set 1.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
+### For the problem set 1 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder go to Week 1 Folder then there there is a file named "Problem Set 1.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
 
-Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then in Problem Set 1 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
+Dynamic Programming, Greedy Algorithms Folder -> Week 1 -> Open Problem Set 1.py -> Then in Problem Set 1 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
 ## Week 2:- Rod Cutting Problem and Recurrence (Practice Quiz)
 
@@ -308,6 +308,12 @@ Dynamic Programming, Greedy Algorithms Folder -> Open Problem Set 1.py -> Then i
 | G | | | | ??2 | ??1 | 0 |
 | | 0 | 0 | 0 | 0 | 0 | 0 |
 ### Write down the values that will be filled in for the positions labeled with ??1 - ??7 in the memo table above and use those to select the correct answers below.<br><br>Answer:-<br>1. ??1 = 0<br>2. ??2 = 1<br>3. ??3 = 1<br>4. ??4 = max(??3, ??2)<br>5. ??7 = ??4 + 1<br>6. ??7 = 2
+
+## Week 2:- Problem Set 2
+
+### For the problem set 2 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder go to Week 2 Folder then there is a file named "Problem Set 2.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
+
+Dynamic Programming, Greedy Algorithms Folder -> Week 2 -> Open Problem Set 2.py -> Then in Problem Set 2 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
 ## Week 3:- Greedy Algorithms(Practice Quiz)
 

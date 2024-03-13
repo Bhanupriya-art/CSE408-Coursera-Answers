@@ -367,8 +367,15 @@ Dynamic Programming, Greedy Algorithms Folder -> Week 3 -> Open Problem Set 3.py
 ```
 Note:- A video Tutorial has also been added to the same Dynamic Programming, Greedy Algorithms folder.
 Named as "Tutorial for Problem Set 3.MOV" In week 3 for problem set 3. If anyone is facing any issue related
-to do how to do week 3 problem set, then they can refer to that video.
+to do how to do week 3 problem set, then they can refer to that video. Or you can see it below.
 ```
+
+### Step-By-Step Guide for problem set 3
+
+
+https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/decf1bc5-e7d3-444d-8da2-944acc2bb258
+
+
 
 
 ## Week 4:- Decision Problems and Languages

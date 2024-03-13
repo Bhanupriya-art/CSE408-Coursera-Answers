@@ -395,7 +395,11 @@ to do how to do week 3 problem set, then they can refer to that video.
 
 ### Q.2 An independent set in a graph is a subset of vertices such that no two vertices in the independent set have an edge between them.<br>**k-Indpendent-Set Problem**<br>Given a graph G and a number k,  we wish to know if there is an independent set of size at least k in G.<br><br>Answer:-<br>1. The k Independent-Set problem is in NP since the certificate can involve just the set of k vertices that we claim to belong to an independent set.<br>2. A graph G has an independent set of size k if and only if its complement has a clique of size k.<br>3. We can reduce the problem of finding k-clique in a graph G to that of finding a k-independent-set in its complement G&#772;.
 
+## Week 4:- Problem Set 4
 
+### For the problem set 4 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder go to Week 4 Folder then there is a file named "Problem Set 4.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
+
+Dynamic Programming, Greedy Algorithms Folder -> Week 4 -> Open Problem Set 4.py -> Then in Problem Set 4 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
 
 

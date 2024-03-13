@@ -356,7 +356,7 @@ Dynamic Programming, Greedy Algorithms Folder -> Week 2 -> Open Problem Set 2.py
 
 ### Select all the correct answers from the list below about the Huffman code generated for this example.<br><br>Answer:-<br>1. The construction of Huffman code will first merge D and E into a subtree.<br>2. b<sub>A</sub> = b<sub>B</sub> = 2<br>3. b<sub>C</sub> = 2<br>4. The average number of bits per character for the Huffman code is  2.2 bits/character
 
-### Q.2 Select all the correct facts about the behavior of the Huffman coding algorithm given a set of characters A<sub>1</sub> ,..., A<sub>n</sub> and their frequencies f<sub>1</sub> ,..., f<sub>n<?sub>.<br><br>Answer:-<br>1. The character with lowest frequency will always have the highest number of bits assigned.<br>2. The character with second lowest frequency will also have the highest number of bits assigned.<br>3. Supposen = 32 and we assign 5 bits to each character. A Huffman code will always assign 5 or fewer bits per character, on average.
+### Q.2 Select all the correct facts about the behavior of the Huffman coding algorithm given a set of characters A<sub>1</sub> ,..., A<sub>n</sub> and their frequencies f<sub>1</sub> ,..., f<sub>n</sub>.<br><br>Answer:-<br>1. The character with lowest frequency will always have the highest number of bits assigned.<br>2. The character with second lowest frequency will also have the highest number of bits assigned.<br>3. Supposen = 32 and we assign 5 bits to each character. A Huffman code will always assign 5 or fewer bits per character, on average.
 
 ## Week 3:- Problem Set 3
 

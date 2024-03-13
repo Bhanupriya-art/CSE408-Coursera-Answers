@@ -356,7 +356,7 @@ Dynamic Programming, Greedy Algorithms Folder -> Week 2 -> Open Problem Set 2.py
 
 ### Select all the correct answers from the list below about the Huffman code generated for this example.<br><br>Answer:-<br>1. The construction of Huffman code will first merge D and E into a subtree.<br>2. b<sub>A</sub> = b<sub>B</sub> = 2<br>3. b<sub>C</sub> = 2<br>4. The average number of bits per character for the Huffman code is  2.2 bits/character
 
-## Week 2:- Problem Set 3
+## Week 3:- Problem Set 3
 
 ### For the problem set 3 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder go to Week 3 Folder then there is a file named "Problem Set 3.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
 

@@ -369,6 +369,38 @@ to do how to do week 3 problem set, then they can refer to that video.
 ```
 
 
+## Week 4:- Decision Problems and Languages
+
+### Q.1 Select all the correct facts from the list be low.<br><br>Answer:-<br>1. Consider the language L = { 0, 10, 100, 110, ... } of binary encodings of all even numbers. An algorithm that recognizes L is also an algorithm that given a number returns true if even and false if odd.<br>2. Consider the problem of finding if a graph G is strongly connected (i.e, entire graph is a single SCC). The corresponding language is L = { < G > | G is a graph that is strongly connected }<br>3. It is possible to encode graphs as binary strings of 0s and 1s such that every graph G corresponds to a unique binary string.
+
+## Week 4:- Polynomial Time and Certificates
+
+### Q.1 Select all the problems for which we know of an efficient polynomial time algorithm through techniques studied thus far in this specialization.<br><br>Answer:-<br>1. Given a weighted graph G, does there exist a negative weight cycle?<br>2. Given a graph is there a spanning tree whose weight is less than K?<br>3. Given an array a of size  n and a number k, are there more than n/4 elements which are >= k?
+
+### Q.2 Select all the correct answers regarding certificates from the list below.<br><br>Answer:-<br>1. Given a number n  that is known to be a product of two large prime numbers (such numbers are used extensively in cryptography), we wish to find out the kth bit of its smallest prime factor. The certificate is the prime factor p itself.<br>2. Let G be a weighted directed graph and s,t be two vertices of G. We wish to know if there a path from s to t of length ≤ W. The empty string can be a certificate for this problem that can be checked in polynomial time.<br>3. Let G be an undirected graph. We wish to know if there is a cycle that visits all vertices of G exactly once. The certificate for a yes answer is given by the cycle itself
+
+## Week 4:- NP Completeness Reductions
+
+### Q.1 Suppose problem A reduces in polynomial time to problem B. Let us suppose that problem B cannot be solved in polynomial time. Does it mean that A cannot also be solved in polynomial time?<br><br>Answer:- No, it is possible that there is some other "more ingenious" way of solving A in polynomial time that does not involve a reduction to B.
+
+### Q.2 True of False: Every problem in P can be reduced in polynomial time to the k-clique problem of checking if a given graph G has  a clique  of size at least k.<br><br>Answer:- True: every problem P is trivially in NP and by Cook-Levin theorem all problems in NP can be reduced to 3-SAT and we saw in the lecture that 3-SAT was reduced in polynomial time to the k-clique problem.
+
+### Q.3 Suppose we have a polynomial time reduction from problem A to problem B, select all the true facts from the list below.<br><br>Answer:-<br>1. If there is no algorithm that can solve A in polynomial time, then there is no algorithm that can solve B in polynomial time.<br>2. If A is NP complete and B is in NP, then B is also NP complete.
+
+### Q.4 Suppose we wish to prove the travelling salesperson problem (TSP) discussed in the lecture is NP complete. Which of the following steps will be needed to do so?<br><br>Answer:-<br>1. We will need to show that TSP is in NP by showing that the yes answer comes with a certificate that can be checked in polynomial time.<br>2. We need to reduce 3-SAT or a previously known NP complete problem to the TSP in polynomial time.<br>3. A reduction from 3-SAT to TSP, will take a boolean 3-CNF-SAT formula and create a weighted graph G that is an instance of TSP.
+
+## Week 4:- NP Completeness Problems
+
+### Q.1 Consider a 3-CNF-SAT problem with n variables denoted x<sub>1</sub>,...,x<sub>m</sub> and m clauses. We wish to reduce it to a 0-1 ILP problem:<br>Find z<sub>1</sub> &#8712; {0, 1} ,..., z<sub>n</sub> &#8712; {0, 1} such that a set of m linear inequality constraints c<sub>1</sub>z<sub>1</sub> + c<sub>2</sub>z<sub>2</sub> + ... + c<sub>n</sub>z<sub>n</sub> &#8805; c<sub>0</sub> are all satisfied.<br>Select all the true facts about the reduction.<br><br>Answer:-<br>1. We use a 0-1 variable z<sub>i</sub> ​corresponding to each variable x<sub>i</sub> in the original 3-CNF-SAT problem.<br>2. A clause of the form x<sub>i</sub> &#8744; x<sub>j</sub> &#8744; x<sub>k</sub> translates into an inequality z<sub>i</sub> + z<sub>j</sub> + z<sub>k</sub> &#8805; 1.<br>3. The logical negation of a variable x<sub>i</sub> can be modeled as the arithmetic operation 1 - z<sub>i</sub><br>4. The clause x&#772;<sub>i</sub>&#772; &#8744; x<sub>j</sub> &#8744; x&#772;<sub>i</sub>&#772; is translated to the inequality -z<sub>i</sub> + z<sub>j</sub> -z<sub>k</sub> &#8805; -1<br>5. The reduction yields as many inequalities as the number of clauses in the 3-SAT formula
+
+### Q.2 An independent set in a graph is a subset of vertices such that no two vertices in the independent set have an edge between them.<br>**k-Indpendent-Set Problem**<br>Given a graph G and a number k,  we wish to know if there is an independent set of size at least k in G.<br><br>Answer:-<br>1. The k Independent-Set problem is in NP since the certificate can involve just the set of k vertices that we claim to belong to an independent set.<br>2. A graph G has an independent set of size k if and only if its complement has a clique of size k.<br>3. We can reduce the problem of finding k-clique in a graph G to that of finding a k-independent-set in its complement G&#772;.
+
+
+
+
+
+
+
 
 
 

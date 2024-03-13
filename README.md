@@ -334,8 +334,39 @@ Dynamic Programming, Greedy Algorithms Folder -> Week 2 -> Open Problem Set 2.py
 ### Q.1 In this lecture, we saw how greedy algorithms were optimal for interval scheduling when our goal is to maximize the number of meetings held. Suppose we have the same problem setup of meetings with start/end times specified and our goal was to improve the overall room utilization : i.e, the amount of time the room is occupied in a meeting rather than the number of meetings.<br><br>Answer the following questions below by selecting the correct facts.<br><br>Answer:-<br>1. Suppose we design a greedy algorithm that first schedules the longest meeting, deletes all the conflicting meetings and recursively solves the remaining sub problem, this algorithm is not optimal in terms of total occupancy.<br>2. The greedy algorithm used to maximize the number of meetings held will not necessarily maximize the total time the room is occupied by a meeting.<br>3. Suppose all meetings are of the same duration then maximizing the number of meetings is equivalent to maximizing the total time utilized by the meetings.
 
 
+## Week 3:- Huffman Codes
 
+### Q.1 Consider a large document with 5 letters {A, B, C, D, E} and the following percentages of occurrence for each of the five letters:
+| Letters | fraction of occurrence |
+|---------|------------------------|
+| A | 35% |
+| B | 25% |
+| C | 20% |
+| D | 15% |
+| E | 5% |
 
+### Consider how many bits each character gets allocated by a Huffman code:
+| Letters | # bits |
+|---------|------------------------|
+| A | b<sub>A</sub> |
+| B | b<sub>B</sub> |
+| C | b<sub>C</sub> |
+| D | b<sub>D</sub> |
+| E | b<sub>E</sub> |
+
+### Select all the correct answers from the list below about the Huffman code generated for this example.<br><br>Answer:-<br>1. The construction of Huffman code will first merge D and E into a subtree.<br>2. b<sub>A</sub> = b<sub>B</sub> = 2<br>3. b<sub>C</sub> = 2<br>4. The average number of bits per character for the Huffman code is  2.2 bits/character
+
+## Week 2:- Problem Set 3
+
+### For the problem set 3 you need to go the Dynamic Programming, Greedy Algorithms Folder in that folder go to Week 3 Folder then there is a file named "Problem Set 3.py". In that file there are question and the code blocks in which some code is written you can directly copy paste the code accordingly.<br><br>  
+
+Dynamic Programming, Greedy Algorithms Folder -> Week 3 -> Open Problem Set 3.py -> Then in Problem Set 3 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
+
+```
+Note:- A video Tutorial has also been added to the same Dynamic Programming, Greedy Algorithms folder.
+In week 3 for problem set 3. If anyone is facing any issue related to do how to do week 3 problem set,
+then they can refer to that video.
+```
 
 
 

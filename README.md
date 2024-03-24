@@ -500,14 +500,49 @@ else:
 ```
 ### Answer:-<br>1. The objective for this problem is the sum of all the variables in the list vars<br>2. Line 4 of the problem declares n=15 variables and stores them in the list vars<br>3. The problem is unbounded.
 
+## Interactive Notes: Diet Problem and Network Flow Problems
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 1:- Network Flow Problems as LPs
+
+### Q.1 Select all the options that are true for network flow problems. Assume all edge capacities are finite and non-negative.<br><br>Answer:-<br>1. At each vertex , the incoming flow equals the outgoing flow.<br>2. Network flow problems are always feasible as long as the graph is connected.<br>3. Flow capacity can be less than or equal to the capacity of the edge.
+
+### Q.2 For the given network , what is the maximum flow that can be transported from source to sink ?
+
+<img width="811" alt="Screenshot 2024-03-24 at 11 55 34 PM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/d592e04d-d2b0-42af-b96f-58947016c33a">
+
+### Answer:- 15
+
+### Q.3 
+<img width="985" alt="Screenshot 2024-03-25 at 12 03 13 AM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/0a78f9df-efea-48c1-983a-36dd72092048">
+
+### Select all the correct flow conservation constraints from the list below.<br><br>Answer:-<br>1. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>BD</sub> = x<sub>DC</sub> + x<sub>DE</sub><br>2. x<sub>AC</sub> + x<sub>DC</sub> = x<sub>CE</sub><br>3. x<sub>AB</sub> = x<sub>BD</sub>
+
+## Week 1:- Geometry of Linear Programs
+
+### Q.1 If a LP has an optimal solution, then at least one solution can always be found at:<br><br>Answer:- the vertices of the feasible region.
+
+### Q.2 Consider the following objective function<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min 4x + 2y + 3z​<br>The feasible region is a  convex polyhedron with the following vertices A(2, 3, 1), B(4, 1, 2), C(5, 4, 1), D(3, 5, 3), and E(1, 2, 1).  we have provided a name for each vertex and its coordinates <br>The optimal value for this LP is:<br><br>Answer:- 9
+
+### Q.3 Select all that apply for a convex polyhedron in the context of linear programming.<br><br>Answer:-<br>1. The optimal solution always lies at one of the vertices of the convex polyhedron.<br>2. Every point within the convex polyhedron , forms a feasible solution.<br>3. For any 2 points within the convex polyhedron , the line segment joining the 2 points also lies completely within the polyhedron.<br>4. Convex polyhedron is formed by the intersection of half spaces defined by constraints.
+
+### Q.4 Which of the following graphs correctly depicts the feasible region for the given LP :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;4x + 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2x + y ≤ 8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x + 2y ≤ 6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x &#8805; 0<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y &#8805; 0<br><br>Answer:-<br>
+<img width="917" alt="Screenshot 2024-03-25 at 12 17 59 AM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/2caa1d16-363b-47fe-a5c1-7d0c6012c057">
+
+## Interactive Notes on Geometry of Linear Programs and Simplex Algorithm
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 1:- LP Algorithms
+
+### Q.1 Select all options that are true about vertices of a polyhedron.<br><br>Answer:-<br>1. A vertex of a polyhedron satisfies all the constraints.<br>2. Vertex lies on at least n faces of the polyhedron , where n is the number of decision variables.
+
+### Q.2 Which of the following statements are true about the simplex algorithm in LP ?<br><br>Answer:-<br>1. At every iteration , the algorithm moves to an adjacent vertex to improve the value of the objective function.<br>2. The average case time complexity for simplex algorithm is polynomial time.
 
 
-
-
-
-
-
-​
  
 
 

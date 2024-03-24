@@ -411,6 +411,119 @@ https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/decf1
 Dynamic Programming, Greedy Algorithms Folder -> Week 4 -> Open Problem Set 4.py -> Then in Problem Set 4 module click on Launch Lab -> Then Copy & Paste code accordingly -> Then Submit your assignment.
 
 
+# Link of course:-  https://www.coursera.org/learn/linear-programming-and-approximation-algorithms
+
+# Approximation Algorithms and Linear Programming
+
+## Interactive Notes: Basics of Linear Programs
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 1:- Basics of Linear Programs
+
+### Q.1 Consider the following linear program: <br><br> max&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3x + 4y<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x + y &#8804; 4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x &#8805; 0<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y &#8805; 0<br><br>Check all options that are correct.<br><br>Answer:-<br>1. The optimal solution for the above LP is 16.<br>2. If we remove the constraint<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x + y &#8804; 4<br>it is still a feasible LP problem.<br>3. If we changed the problem's objective function to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; min - 3x - 4y<br>then the optimal solution for (x,y) remains unchanged.
+
+### Q.2 Consider the following scenario.<br><br>Green Energy Solutions is a company specializing in solar panel installations. They have a limited workforce and want to maximize their profit while adhering to certain constraints. The company has two types of solar panel installations: Type A and Type B.<br><br>Each Type A installation:<ul><li>Requires 12 hours of labor</li><li>Costs $500 in materials</li><li>Generates $800 profit per installation.</li></ul><br><br>Each Type B installation:<ul><li> Requires 8 hours of labor</li><li>Costs $300 in materials</li><li>Generates $600 profit per installation. </li></ul><br>The company has a total of 1000 labor hours available.<br><br>The company has $400,000 in cash at hand.<br><br>Due to supply constraints, the company can only install a maximum of 300 Type A panels.<br><br>Formulate a linear program to maximize the profits while adhering to the constraints above. Let decision variable A denote the number of type A installation and decision variable B denote the number of type B installations.<br>Choose the correct answers from the choices given below.<br><br>Answer:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;800A+600B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12A+8B≤1000<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500A+300B≤400000<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A≤300<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,B≥0
+​
+### Q.3 Select all options that are linear programs.<br><br>Answer:-  <br>1. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min&nbsp;&nbsp;&nbsp;5x+7y<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3x+2y≤12<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4x+5y≤15<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x,y≥0<br><br>2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;5x+3y<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2x+y≤10<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3x+2y≤15<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x,y≥0
+
+### Q.4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;2x+y<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x+y≥5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x,y≥0<br>The given linear program is:<br><br>Answer:- Feasible but not bounded
+
+### Q.5 Select all the options that are correct.<br><br>Answer:- An LP problem can have more than one optimal solution
+
+## Lab: Formulate and Solve LPs using PULP
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 1:- Solving LPs using PULP
+
+### Q.1 What does the statement<br>x_var = pulp.LpVariable('x', lowBound=0, upBound=10, cat='Continuous')<br>achieve? Select all the correct answers. See documentation here: https://www.coin-or.org/PuLP/pulp.html<br><br>Answer:-<br>1. Setting cat=Continuous is optional since the category is set to Continuous by default.<br>2. In a linear programming problem, every decision variable should have cat = Continuous<br>3. It adds a decision variable 'x' to the problem.
+
+### Q.2 Consider the following code sinppet:<br>
+```
+from pulp import *
+mdl = LpProblem('my_problem', LpMaximize)
+x = LpVariable('x', lowBound = 0)
+y = LpVariable('y', lowBound = 0, upBound = 4)
+mdl += (x + 2 * y) 
+mdl += x <= y + 3
+mdl += x >= y - 1 
+mdl += x - 2 * y <= 5
+status= mdl.solve()
+print(x.value())
+print(y.value())
+print(mdl.objective.value())
+```
+### Select all the correct facts about the code snippet above. Make sure that no incorrect facts are selected.<br><br>Answer:-<br>1. The LP problem as entered in the code snippet is feasible<br>2. The LP problem as entered in the code snippet is bounded.<br>3. The linear programming problem seeks to maximize the objective x + 2 * y<br>4. The constraint x − 2 y≤ 5 is part of the linear program.
+
+### Q.3 Consider again the code snippet  from the previous problem
+```
+from pulp import *
+mdl = LpProblem('my_problem', LpMaximize)
+x = LpVariable('x', lowBound = 0)
+y = LpVariable('y', lowBound = 0, upBound = 4)
+mdl += (x + 2 * y) 
+mdl += x <= y + 3
+mdl += x >= y - 1 
+mdl += x - 2 * y <= 5
+status= mdl.solve()
+assert status == LpStatusOptimal
+print(x.value())
+print(y.value())
+print(mdl.objective.value())
+```
+### Select all the correct choices from the list below<br><br>Answer:- All options are correct
+
+### Q.4 Consider the code snippet below:
+```
+from pulp import *
+mdl = LpProblem('n_problem', LpMaximize)
+n = 15
+vars = [ LpVariable(f'x{i}', lowBound = 0.0) for i in range(n)]
+mdl += lpSum(vars)
+for i in range(14):
+    mdl += vars[i] - vars[i+1] <= i 
+    mdl += vars[i] - vars[i+1] >= -i
+status = mdl.solve() 
+if status == LpStatusOptimal:
+    print('Optimal solution found!')
+    print([vi.value() for vi in vars])
+    print(mdl.objective.value())
+elif status == LpStatusInfeasible:
+    print('Infeasible problem')
+elif status == LpStatusUnbounded:
+    print('Unbounded problem')
+else:
+    print('Unknown status')
+```
+### Answer:-<br>1. The objective for this problem is the sum of all the variables in the list vars<br>2. Line 4 of the problem declares n=15 variables and stores them in the list vars<br>3. The problem is unbounded.
+
+
+
+
+
+
+
+
+​
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -561,9 +561,67 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 
 ### Q.2 Solve the LP relaxation of the ILP from the previous problem using PuLP. What is the answer obtained?<br><br>Answer:- ```40.00```
 
-### Q.3 What can you conclude from solving the LP relaxation and original ILP for the previous problem.<br><br>Answer:-<br>1. They have the same solution.<br>2. The LP relaxation yields an integral solution for all the decision variables and we know from just that information that the ILP will also have the same optimal solution.<br>3. The integrality gap is 1.<br><br>The questions below pertains to the following ILP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;2x<sub>1</sub> - 3x<sub>2</sub> + x<sub>3</sub>
+### Q.3 What can you conclude from solving the LP relaxation and original ILP for the previous problem.<br><br>Answer:-<br>1. They have the same solution.<br>2. The LP relaxation yields an integral solution for all the decision variables and we know from just that information that the ILP will also have the same optimal solution.<br>3. The integrality gap is 1.<br><br>The questions below pertains to the following ILP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max&nbsp;&nbsp;&nbsp;2x<sub>1</sub> - 3x<sub>2</sub> + x<sub>3</sub><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s.t.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>1</sub> - x<sub>2</sub> &#8805; 5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>1</sub> - x<sub>2</sub> &#8804; 0.75<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>2</sub> - x<sub>3</sub> &#8804; 1.25<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>2</sub> - x<sub>3</sub> &#8805; 0.95<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub> &#8712; [-1, 1]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub> &#8712; Z
 
+### Q.4 What is the status obtained when solving the ILP?<br><br>Answer:- Infeasible
 
+### Q.5 What is the status of the LP relaxation?<br><br>Answer:- Optimal solution obtained
+
+## Interactive Notes: Vertex Cover as an ILP
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 2:- Vertex Cover Problem ILP formulation
+
+### Q.1 Which of the following statements is true about an optimal solution to the vertex cover problem?<br><br>Answer:- It includes the minimum number of vertices that cover all edges
+
+### Q.2 If you add a constraint 'xi + xj <= 1 for some edge (i, i)' to the vertex cover problem, what will be the effect?<br><br>Answer:- Some valid vertex covers will be excluded
+
+### Q.3 Which of the following is a correct integer linear programming formulation for the vertex cover problem?<br><br>Answer:- Minimize &#8721; xi subject to xi + xj >= 1 for every edge (i, j) and xi in {0, 1} for every vertex i
+
+### Q.4 Given a graph with vertices (1, 2, 3, 4} and edges (1, 2), (2, 3), (3, 4), which of the following is a feasible solution for the vertex cover problem?<br><br>Answer:-<br>1. {2,4}<br>2. {1,3}
+
+### Q.5 In an integer linear programming formulation, why is the condition 'xi in (0, 1} for every vertex i' necessary for the vertex cover problem?<br><br>Answer:- It ensures that the solution is a vertex cover
+
+## Interactive Notes: Integrality Gap for Vertex Cover
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 2:- Vertex Cover ILP, LP Relaxation and Integrality Gap.
+
+### Q.1 We wish to find the optimal vertex cover for a graph G. Solving the LP relaxation of the vertex cover problem yields an optimal solution with value 442. What can we say about the size of the optimal vertex cover of the graph G? Choose all the options that are correct.<br><br>Answer:-<br>1. The optimal vertex cover size lies in the range [442, 884].<br>2. Using the rounding procedure on fractional solutions of the LP relaxation would yield a vertex cover of size between 442 and 884.
+
+### Q.2 Calculate the optimal vertex cover for the graph below. Feel free to use the code/notes provided as part of the ungraded lab. Hopefully you have a python setup either on your computer with the pulp library installed or you are using google colab as indicated in the previous quiz on solving ILPs.
+<img width="703" alt="Screenshot 2024-03-26 at 3 55 41 PM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/ddcfe0bb-4605-4d32-a5d8-7e66de44abd9">
+
+### Answer:- 5
+
+### Q.3 Solve the LP relaxation for the graph in the previous problem and write down its optimal objective value below.<br><br>Answer:- 3.5
+
+### Q.4 If we rounded the LP relaxation for the problem above, what is the vertex cover we obtain?<br><br>Answer:- All the vertices of the graph are part of this cover.
+
+## Interactive Notes: Branch and Bound Solvers for ILPs
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 2:- Branch and Bound Solvers
+
+### Q.1 Suppose we are solving an ILP using branch and bound algorithm. Select all the facts below about the algorithm that are true.<br><br>Answer:-<br>1. Each step of branch and bound solves the LP relaxation of some ILP problem that is either the original problem or  obtained by branching.<br>2. If the LP relaxation at the "root" of the branch and bound is infeasible, the whole ILP must be infeasible.<br>3. If the original ILP is unbounded, then the LP relaxation at the root of branch and bound (the very first LP we will solve) will be unbounded.
+
+### Q.2 We are solving a branch and bound problem and at some stage, we solve a LP relaxation that yields the solution x<sub>1</sub> = 2.5, x<sub>2</sub> = 1.3, x<sub>3</sub> = 5, x<sub>4</sub> = 6.9.<br><br>Select all the valid options for the branch and bound algorithm.<br><br>Answer:-<br>1. We recursively solve two subproblems with the constraints x<sub>4</sub> &#8804; 6 and x<sub>4</sub> &#8805; 7, respectively.<br>2. We may recursively solve two subproblems with the constraints x<sub>1</sub> &#8804; 2 and x<sub>1</sub> &#8805; 3, respectively.
+
+### Q.3 We are solving an ILP whose objective function is max x<sub>1</sub> + x<sub>2</sub> - x<sub>3</sub>. At some point in the branch and bound algorithm, we have seen integer solutions shown below:<br>
+| x<sub>1</sub> | x<sub>2</sub> | x<sub>3</sub> | objective |
+|---------------|---------------|---------------|-----------|
+|       1        |        2       |      -1         |     4      |
+|       4       |        1       |      2         |     3      |
+|       5        |        2       |      -2         |     9      |
+|       1        |        1       |      1         |     2      |
+
+### Select all true facts from the list below.<br><br>Answer:-<br>1. Suppose we solve an LP relaxation and find that the objective value is 9.8 , we can prune this branch from further consideration.<br>2. Suppose we solve an LP relaxation and find that the objective value is 8.5, we can prune this branch from further consideration.<br>3. The optimal solution of the ILP will have objective value greater than or equal to 9.
 
 
 

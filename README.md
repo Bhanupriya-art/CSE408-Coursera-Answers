@@ -623,6 +623,83 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 
 ### Select all true facts from the list below.<br><br>Answer:-<br>1. Suppose we solve an LP relaxation and find that the objective value is 9.8 , we can prune this branch from further consideration.<br>2. Suppose we solve an LP relaxation and find that the objective value is 8.5, we can prune this branch from further consideration.<br>3. The optimal solution of the ILP will have objective value greater than or equal to 9.
 
+## Week:- 3 Approximation Algorithm Basics
+
+### Q.1 We have designed an efficient 2-factor approximation algorithm for a minimization problem.  Running the approximation algorithm on an instance yields a solution with objective value 12. What can we say about the optimum?<br><br>Answer:- The optimal solution is in the range 6 ≤ OPT ≤ 12.
+
+### Q,2 We have designed an efficient 3-factor approximation algorithm for a maximization problem.  Running the approximation algorithm on an instance yields a solution with objective value 12. What can we say about the optimum?<br><br>Answer:-<br>1. The optimal solution may be the same as that of the approximation algorithm.<br>2. The optimal solution is in the range 12 ≤ OPT ≤ 36
+
+## Interactive Notes: Jobshop Scheduling
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 3:- Job Shop Scheduling Questions
+
+### The questions below concern the following instance of the jobshop scheduling problem.
+| Job ID | Time |
+|--------|------|
+| 1 | 5 |
+| 2 | 6 |
+| 3 | 2 |
+| 4 | 5 |
+| 5 | 2 |
+| 6 | 1 |
+| 7 | 3 |
+| 8 | 4 |
+
+### Q.1 Consider an instance of the minimum makespan scheduling above. Suppose we have three processors. What is the makespan achieved if we ran the greedy algorithm. You can simply use a pencil and paper to run the greedy algorithm to work out the answer. Assume that the algorithm processes the jobs in the increasing order of Job ID.<br><br>Answer:- `11`
+
+### Q.2 What is the makespan of the solution
+| Processor | Job IDs |
+|-----------|---------|
+| 1 | 2, 3, 5 |
+| 2 | 1, 6, 7 |
+| 3 | 4, 8 |
+
+### Answer:- `10`
+
+### Q.3 Suppose we sorted the jobs in decreasing order of their times instead and ran the greedy algorithm. What is the makespan of the optimal solution obtained?<br><br>Answer:- `10`
+
+### Q.4 Without solving the optimal problem, we wish to find bounds on the optimal solution anyways. Which of the following options are valid arguments that serve to place bounds on the  optimal solution.<br><br>Answer:-<br>1. The total times for all jobs is 28. No matter how we distribute it among three processors, at least one processor must have finish time more than $\frac{28}{3}$ or 9.3333.... Therefore, the optimal answer cannot be smaller than 10.<br>2. The algorithm is known to have an approximation ratio of 2 - $\frac{1}{3}$ = $\frac{5}{3}$. Therefore, the optimal solution has to be at least 11 &#215; $\frac{3}{5}$ &#8776; 6.6<br>3. The following assignment: 
+| Processor | Job IDs |
+|-----------|---------|
+| 1 | 2, 3, 5 |
+| 2 | 1, 6, 7 |
+| 3 | 4, 8 |
+
+### has a makespan of 10. And therefore, the optimal solution must have value $\leq 10$.<br>4. By pigeon hole principle, if we consider the first four job IDs 1, 2, 3, 4; at least two of the jobs must share the same processor in any assignment. This yields a lower bound of 7 on the optimal solution.
+
+## Interactive Notes on Vertex Cover Approximation Algorithms
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 2:- Vertex Cover
+
+### The questions below concern the following graph with 7 nodes.
+<img width="740" alt="Screenshot 2024-03-26 at 9 59 43 PM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/c112ccf3-cdb4-4dae-8284-0353bcee7614">
+
+### Q.1 Suppose we apply the greedy algorithm that repeatedly chooses the maximum degree node in the graph, adds it to the cover and then deletes it from the graph.  Note that we break ties between multiple vertices that have the same degree by choosing the vertex with lowest number/ID.<br><br>Answer:-<br>1. Node 4 is the second node added to the cover.<br>2. Node 3 is the very first node added to the cover.<br>3. Node 6 is the third node added to the cover.<br>4. The greedy algorithm produces a vertex cover of size 5 that involves nodes 1, 3, 4, 5, 6
+
+### Q.2 Suppose we ran the greedy algorithm based on maximal matching and processed the edges in the following order:<br><br>`[(1,2), (1,3), (1, 4), (2,3), (2,6), (3,4), (3,5), (3,6), (4, 5), (4,7), (5, 6), (5,7), (6,7)]`<br><br>What is the size of the vertex cover that we obtain?<br><br>Answer:-`6`
+
+## Interactive Notes on Maximum Satisfiability Approximation
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 2:- Max-SAT Approximation
+
+### The problems below concern the following instance for the MAX-SAT problem involving propositional variables $\{x_1}$, $\{x_2}$, $\{x_3}$, $\{x_4}$. Note that &#8744; stands for Or, $\overline{x_j}$ epresents the negation of $\{x_j}$<br><br>Consider the MAXSAT instance involving the following clauses.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\{x_1}$ &#8744; $\{x_2}$ &#8744; $\overline{x_4}$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\overline{x_2}$ &#8744; $\{x_3}$ &#8744; $\{x_4}$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\{x_1}$ &#8744; $\overline{x_2}$ &#8744; $\{x_3}$ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\{x_2}$ &#8744; $\overline{x_3}$ &#8744; $\overline{x_4}$<br><br><br>Q.1 What is the expected number of clauses that a randomly chosen truth assignment where each variable is independently assigned true/false with probability $\frac{1}{2}$ .<br><br>Answer:- `3.5`
+
+### Q.2 Using just  the information from the previous problem select which fact you can conclude.<br><br>Answer:- There is a truth assignment that satisfies all the clauses.
+
+### Q.3 Suppose we set $\{x_1}$ = true, what is the expected number of clauses we can satisfy in the resulting formula?<br><br>Answer:- `3.75`
+
+### Q.4 Suppose we set $\{x_1}$ - false, what is the expected number of clauses we can satisfy in the resulting formula?<br><br>Answer:- `3.25`
+
+### Q.5 What truth value will our approximation algorithm for MAXSAT assign to $\{x_1}$ ?<br><br>Answer:- `True`
 
 
 

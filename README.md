@@ -542,7 +542,7 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 
 ### Q.2 Which of the following statements are true about the simplex algorithm in LP ?<br><br>Answer:-<br>1. At every iteration , the algorithm moves to an adjacent vertex to improve the value of the objective function.<br>2. The average case time complexity for simplex algorithm is polynomial time.
 
-## Problem Set #1:- Programming Assignment: Linear Programming
+## Problem Set # 1 :- Programming Assignment: Linear Programming
 ### To complete this lab Click on the link below:-
 <a href="Approximation Algorithms and Linear Programming/Week 1/Problem Set 1.ipynb">Click Here</a> 
 

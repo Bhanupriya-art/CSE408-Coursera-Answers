@@ -626,6 +626,10 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 
 ### Select all true facts from the list below.<br><br>Answer:-<br>1. Suppose we solve an LP relaxation and find that the objective value is 9.8 , we can prune this branch from further consideration.<br>2. Suppose we solve an LP relaxation and find that the objective value is 8.5, we can prune this branch from further consideration.<br>3. The optimal solution of the ILP will have objective value greater than or equal to 9.
 
+## Problem Set # 2 :- Programming Assignment: Integer Linear Programs
+### To complete this lab Click on the link below:-
+<a href="Approximation Algorithms and Linear Programming/Week 2/ProblemSet2.ipynb">Click Here</a>
+
 ## Week:- 3 Approximation Algorithm Basics
 
 ### Q.1 We have designed an efficient 2-factor approximation algorithm for a minimization problem.  Running the approximation algorithm on an instance yields a solution with objective value 12. What can we say about the optimum?<br><br>Answer:- The optimal solution is in the range 6 ≤ OPT ≤ 12.

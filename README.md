@@ -713,6 +713,70 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 <a href="Approximation Algorithms and Linear Programming/Week 3/Problem-Set-3.ipynb">Click Here</a>
 
 
+## Interactive Notes on TSP Basics, NP-Hardness and Inapproximability
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 4:- TSP Basics
+
+### Q.1 The questions below concern the following TSP instance involving 5 nodes:
+![eicLGcr0R7-dQsS1-tuUPw_6d525c030e0140ac97206c949eb66df1_IMG_8FC0BB8E69EC-1](https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/d1c1b44e-5a56-4392-82c9-6fd8a9d560c2)
+### Edges shown in black are assigned a weight of 1 whereas edges shown in red are assigned a weight of 2.<br><br>Q1. Select all the correct answers from the list below.<br><br>Answer:-<br>1. The sequence of vertices 1,2,3,4,5, 1  (1 is the start/end point) is a valid TSP tour of cost 6 <br>2. There is a TSP tour whose cost is 5, i.e, it involves only the black edges in the graph. 
+
+### Q.2 The TSP above is an instance of a Metric TSP. It is symmetric and satisfies the triangle inequality.<br><br>Answer:- True
+
+### Q.3 This question concerns the following instance of the Hamiltonian Cycle Problem:
+![7DvSL14CRue5RQQDOzFVyA_116ca8259056434491dd6b70378df8f1_IMG_7932ED17635F-1](https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/d4689cd9-762c-4fc2-8e64-3cdcfdbf7648)
+### We wish to find out if there is a Hamiltonian cycle problem using a reduction to the TSP problem. Select all the correct answers about this reduction.<br><br>Answer:-<br>1. The reduction will need to assign a weight of 1 to each edge in the original graph and add the missing edges (4,5), (1,3) and (2,4) with some weight $\{W > 1}$.<br>2. Let $\{W > 1}$ be the weight given to the missing edges that we will need to add back for the reduction to TSP. The optimal TSP tour cost will be at least $\{5 + W}$ if there is no Hamiltonian cycle.<br>3. Once we reduce to the TSP, we conclude the presence of a Hamiltonian cycle if the optimal TSP tour has weight 6.
+
+## Interactive Notes on Exact Approaches to TSP
+```
+For this lab just launch lab and then cut the tab and refresh your course you will find it is already completed.
+```
+
+## Week 4:- Held-Karp Algorithm
+
+### The problem below concerns the following TSP instance. Edges shown in black have a weight of 1 1 whereas red edges have a weight of 3.
+![eicLGcr0R7-dQsS1-tuUPw_6d525c030e0140ac97206c949eb66df1_IMG_8FC0BB8E69EC-1](https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/74ab48b7-66a1-4b60-b2f8-7eaac3f6acd1)
+### Assume vertex 1 is the designated start/end point of the tour. Let $C_{ij}$ represent the cost of the edge from vertex i to vertex j.<br><br>Q.1 Which of the following expressions is the appropriate equation for the value of $minCostPath(\\{2,3\\},4)$?<br<br>Answer:- $\min(\text{{minCostPath}}(\\{2\\},3) + C_{3,4}, \text{{minCostPath}}(\\{3\\},2) + C_{2,4})$
+
+### Q.2 Calculate the value of $minCostPath(\\{2,3\\},4)$?<br<br>Answer:- `3`
+
+### Q.3 What vertex in the graph would you associate with the memo table corresponding to $minCostPath(\\{2,3\\},4)$ to recover the minimum cost path?<br<br>Answer:- `3`
+
+### Q.4 Consider the recurrence for the minimum cost TSP tour:<br><br> <img width="500" alt="Screenshot 2024-03-29 at 1 40 46 AM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/372ac2f8-6ab0-4115-a0f0-8eb489fb0173"><br><br>Select appropriate choices for the missing portions.<br><br>Answer:-<br>1. ??<sub>4</sub> $= C_{2,1}$ <br>2. ??<sub>6</sub> $= C_{3,1}$ <br>3. ??<sub>1</sub> $= C_{4,1} = 2$
+
+## Week 4:- TSP Integer Programming
+
+### The following problems concern the TSP instance below. Black colored edges have weight 1 1 whereas red edges have weight 2.<br><br> ![eicLGcr0R7-dQsS1-tuUPw_6d525c030e0140ac97206c949eb66df1_IMG_8FC0BB8E69EC-1](https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/9f835762-7660-4d40-8d5e-1546a094380c) <br><br>We consider both the encodings MTZ and subtour elimination as presented in our interactive notes. Note that they are more general than the ones in the video which did not go into the details for non-symmetric cases. Please read through these notes and look at the provided code before attempting the problems below.<br><br>Q.1 Select all the correct facts about the ILP encoding/decision variables $x_{i,j}$ .<br><br>Answer:-<br> 1. Setting the  variable $x_{i,j} = 1$ denotes that we go from vertex i to j using the edge (i,j) in our tour.<br>2. The constraint $x_{2,1} + x_{3,1} + x_{4,1} + x_{5,1} = 1$ expresses that we have exactly one edge entering the vertex 1 in our tour.
+
+### Q.2 Select all the correct facts about the MTZ encoding as it pertains to the problem above.<br><br>Answer:-<br>1. Time stamp variables $t_2,t_3,t,_4,t_5$  are added to eliminate possible subtours by assigning increasing time stamps to nodes visited along a tour.<br>2. The constraint t<sub>3</sub> &ge; t<sub>2</sub> + x<sub>2,3</sub> - M(1 - x<sub>2,3</sub>) for a large number M is equivalent to if x<sub>2,3</sub> = 1 then $t_3 \geq t_2 + 1$ else $t_3 \geq t_2 - M$
+
+### Q.3 Suppose we solve the degree ILP relaxation and obtain a subtour {2,3,5}, which of the following inequalities will eliminate the subtour. Once again, please refer to the detailed notes which present the general case for non-symmetric TSPs rather than the video lecture which is restricted to the symmetric case.<br><br>Answer:-<br>1. $x_{2,4} + x_{3,4} + x_{5,4} + x_{2,1} + x_{3,1} + x_{5,1} \geq 1$ <br>2. $x_{4,2} + x_{4,3} + x_{4,5} + x_{1,2} + x_{1,3} + x_{1,5} \geq 1$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

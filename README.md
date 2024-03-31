@@ -755,12 +755,35 @@ For this lab just launch lab and then cut the tab and refresh your course you wi
 
 ### Q.3 Suppose we solve the degree ILP relaxation and obtain a subtour {2,3,5}, which of the following inequalities will eliminate the subtour. Once again, please refer to the detailed notes which present the general case for non-symmetric TSPs rather than the video lecture which is restricted to the symmetric case.<br><br>Answer:-<br>1. $x_{2,4} + x_{3,4} + x_{5,4} + x_{2,1} + x_{3,1} + x_{5,1} \geq 1$ <br>2. $x_{4,2} + x_{4,3} + x_{4,5} + x_{1,2} + x_{1,3} + x_{1,5} \geq 1$
 
+## Week 4:- Approximations for Metric TSPs
 
+### Suppose we have a TSP instance for which the minimum spanning tree (MST) is shown below.
+<img src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/2aac6c18-7a9a-49b8-b506-c957d3311ac0" alt="EPPcriinQSaZTJU5q_Oycw_2e4ae7df467c49e0aeed293fd30fd8f1_tsp-mst-quiz" width="300px">
 
+### The edges not in the MST have not been shown. We perform a depth first traversal of the TSP and it yields the following sequence of visits that form a TSP tour:<br><br>[1,2,5,6,3,4]<br><br>Note that we take vertex 1 to be the start/end point.<br><br>Q.1 Which of the following  are the shorcut edges in the TSP tour constructed?<br><br>Answer:-<br>1. (6,3)<br>2. (5,6)<br>3. (4,1)
 
+### Q.2 What can we say for sure about the cost of the edge (6,5) denoted $C_{6,5}$ in the original TSP?<br><br>Answer:-<br>1. $C_{6,5} &#8804; 2$<br>2. $C_{6,5} = C_{5,6}$
 
+### Q.3 What can we say for sure about the cost of the TSP tour [1,2,5,6,3,4] obtained computed by shorcutting the MST as above? Select all choices that apply<br><br>Answer:-<br>1. The cost of the tour must be less than or equal to twice the cost of the MST.<br>2. The cost of the TSP tour must be  &#8804; 10
 
+### Q.4 Which of the following statements about the cost of the optimal TSP tour for the instance above can be concluded.<br><br>Answer:-<br>1. The optimal tour cost has to be &#8805; 5.<br>2. The optimal tour cost has to be &#8804; 10.<br><br>Proceeding with the previous example, the odd degree vertices in the MST are {1,4,5,6} each of which is a leaf and has degree 1. Suppose we construct a minimum weight matching over these odd degree vertices to obtain the following graph which shows the original MST edges in black and the matching edges and weights in blue.<br><br> <img src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/2aac6c18-7a9a-49b8-b506-c957d3311ac0" alt="EPPcriinQSaZTJU5q_Oycw_2e4ae7df467c49e0aeed293fd30fd8f1_tsp-mst-quiz" width="300px"> <br><br>An Eulerian tour of this graph is obtained as<br><br>[1,2,5,4,3,2,6,1]<br><br>You can verify that this tour visits all edges in the graph formed by MST and matching edges.
 
+### Q.5 Which of the following is the TSP tour that will be obtained by shortcutting the Eulerian tour?<br><br>Answer:- [1,2,5,4,3,6]
+
+### Q.6 Which of the following is a valid observation about the cost of the TSP tour obtained by shortcutting the Eulerian tour?<br><br>Answer:-<br>1. Cost of TSP tour is less than or equal to 8.7<br>2. The cost of the tour must be less than or equal to the cost of all the edges in the matching + cost of all edges in the MST<br>3. Cost of TSP tour is less than or equal to 10 (the bound we placed on the cost of the previous tour using DFS).
+
+## Week 4:- Fully Polynomial Time Approximation Scheme
+
+### Q.1 A fully polynomial time approximation scheme for a maximization problem guarantees a solution within ( 1 - &#8714; ) OPT where OPT is the optimal solution value in time $n^2 &#215; \left(\frac{1}{\epsilon}\right)^2$. . We wish to compute an approximation that is guaranteed to be no worst than 0.9OPT What is the time cost for the algorithm?<br><br>Answer:- $100n^2$<br><br>The questions below concern  a Knapsack problem instance with 4 items and the following data about weights and value. <br>
+| | a1 | a2 | a3 | a4 | 
+|-|----|----|----|----|
+| Weight | 2 | 4 | 3 | 1 |
+| Value | 1 | 2 | 1 | 1 |
+### The total weight budget is $ 6 $.<br><br>Recall that $W_{i,v}$ is defined as the minimum weight of items needed to achieve value exactly v while choosing the subset of items { a<sub>1</sub>,...,a<sub>i</sub> }<br><br>Also recall the recurrence/base cases for $W$<br><br>$W (0,0) = 0, W (0,v) = &#8734;$ $if$ $v > 0, W (i,0) = 0$<br>$W (i,v) = min( W (i - 1,v), W (i - 1, v - v_i) + w_i )$ where $w_i, v_i$ are the weight and value, respectively of item $a_i$. 
+
+### Q.2 Which of the following expressions in terms of $W$ yield the optimal value for the original Knapsack problem?<br><br>Answer:- $\max \{v \mid 0 \leq v \leq 5 \text{ and } W(4,v) \leq 6\}$
+
+### Q.3 Select all the correct choices from the list below.<br><br>Answer:-<br>1. $W (0,0) = 0$<br>2. $W (1,1) = min( W (0,1), W (1,0) + 2)$<br>3. $W (1,1) = 2$ 
 
 
 

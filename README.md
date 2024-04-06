@@ -1,4 +1,4 @@
-<img width="871" alt="Screenshot 2024-04-06 at 9 43 19 PM" src="https://github.com/Bhanupriya-art/CSE408-Coursera-Answers/assets/120407422/a375ba0e-d5d0-4dc6-ab6c-1633b688c569"># CSE408 ANSWERS
+# CSE408 ANSWERS
 
 # Link of course:- https://www.coursera.org/learn/analysis-of-algorithms
 
